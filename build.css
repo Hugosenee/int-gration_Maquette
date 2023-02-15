@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+}
+body #gauche {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins Medium";
+}
+body #gauche #minance {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+body #gauche #minance span {
+  color: #fff;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-top: 10px;
+}
+body #gauche #dashboardSection {
+  height: 70%;
+  width: 100%;
+}
+body #gauche #dashboardSection #dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  width: 250px;
+  background-color: lightgray;
+  border-radius: 17px;
+  gap: 15px;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+body #gauche #dashboardSection ul {
+  margin-left: 10%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+body #gauche #dashboardSection ul li {
+  display: flex;
+  gap: 15px;
+  margin-top: 5%;
+  margin-left: 10%;
+  align-items: center;
+  color: #ffffff;
+  opacity: 80%;
+}
+body #gauche #logout {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+body #gauche #logout div {
+  display: flex;
+  margin-left: 10%;
+  color: #ffffff;
+  opacity: 80%;
+  gap: 15px;
+}
+body #gauche #logout div p {
+  margin-top: 5px;
+  font-weight: lighter;
+}
+body #milieu {
+  width: 55%;
+  height: 100%;
+  background-color: red;
+}
+body #droite {
+  width: 25%;
+  height: 100%;
+  background-color: lightgray;
+}
+
+/*# sourceMappingURL=build.css.map */
