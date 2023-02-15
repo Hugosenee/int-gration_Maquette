@@ -82,12 +82,127 @@ body #gauche #logout div p {
 body #milieu {
   width: 55%;
   height: 100%;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+body #milieu #Hi {
+  height: 10%;
+  width: 100%;
+  font-family: "Poppins Medium";
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4%;
+}
+body #milieu #Hi p {
+  font-size: x-large;
+  color: #ffffff;
+}
+body #milieu #Hi div {
+  width: 350px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10%;
+}
+body #milieu #Hi div img {
+  width: 25px;
+  margin-left: 15px;
+}
+body #milieu #Hi div input {
+  border: none;
+  font-size: large;
+  color: black;
+}
+body #milieu #totalBalance {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  font-family: "Poppins Medium";
+}
+body #milieu #totalBalance #chiffreBalance {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+body #milieu #totalBalance #chiffreBalance p {
+  color: #ffffff;
+  opacity: 80%;
+}
+body #milieu #totalBalance #chiffreBalance div {
+  display: flex;
+}
+body #milieu #totalBalance #chiffreBalance div p {
+  font-size: larger;
+  opacity: 100%;
+}
+body #milieu #totalBalance #chiffreBalance div span {
+  margin-left: 10px;
+  color: black;
+  background-color: #FAFF00;
+  border-radius: 10px;
+  width: 40px;
+  height: 25px;
+  text-align: center;
+}
+body #milieu #totalBalance #ulBalance {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+body #milieu #totalBalance #ulBalance div {
+  width: 320px;
+  height: 45px;
+  background-color: #292727;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #milieu #totalBalance #ulBalance div ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  color: #ffffff;
+  align-items: center;
+  font-size: medium;
+  font-weight: lighter;
+}
+body #milieu #totalBalance #ulBalance div ul #active {
+  background-color: #0D0C0C;
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+body #milieu #graphic {
+  height: 50%;
+  width: 100%;
+  background-color: #303541;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+body #milieu #graphic img {
+  width: 90%;
+  height: 100%;
+}
+body #milieu #recentTransactions {
+  height: 20%;
+  width: 100%;
 }
 body #droite {
   width: 25%;
   height: 100%;
-  background-color: lightgray;
 }
 
 /*# sourceMappingURL=build.css.map */
