@@ -80,7 +80,7 @@ body{
     }
   }
   #milieu{
-    width: 55%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -185,7 +185,7 @@ body{
       }
     }
     #graphic{
-      height: 50%;
+      height: 45%;
       width: 100%;
       background-color: #303541;
       border-radius: 25px;
@@ -197,12 +197,37 @@ body{
       }
     }
     #recentTransactions{
-      height: 20%;
+      height: 25%;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      #haut{
+        height: 30%;
+        width: 100%;
+        background-color: rebeccapurple;
+        display: flex;
+      }
+      #mid{
+        height: 30%;
+        width: 100%;
+        background-color: #20232BB2;
+        opacity: 70%;
+        border-radius: 20px;
+        display: flex;
+      }
+      #bas{
+        height: 30%;
+        width: 100%;
+        background-color: #20232BB2;
+        opacity: 70%;
+        border-radius: 20px;
+        display: flex;
+      }
     }
   }
   #droite{
-    width: 25%;
+    width: 30%;
     height: 100%;
   }
 
