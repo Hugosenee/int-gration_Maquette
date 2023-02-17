@@ -17,6 +17,11 @@ body {
   height: 130vh;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+}
 body #gauche {
   width: 20%;
   height: 120vh;
@@ -24,6 +29,11 @@ body #gauche {
   flex-direction: column;
   justify-content: center;
   font-family: "Poppins Medium";
+}
+@media screen and (max-width: 1024px) {
+  body #gauche {
+    display: none;
+  }
 }
 body #gauche #minance {
   height: 15%;
@@ -47,7 +57,7 @@ body #gauche #dashboardSection #dashboard {
   align-items: center;
   justify-content: center;
   height: 65px;
-  width: 250px;
+  width: 80%;
   background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
   border-radius: 17px;
   gap: 15px;
@@ -93,6 +103,16 @@ body #milieu {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1024px) {
+  body #milieu {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body #milieu {
+    width: 100%;
+  }
+}
 body #milieu #Hi {
   height: 10%;
   width: 100%;
@@ -101,12 +121,20 @@ body #milieu #Hi {
   justify-content: space-between;
   padding-top: 4%;
 }
+@media screen and (max-width: 530px) {
+  body #milieu #Hi {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
 body #milieu #Hi p {
   font-size: x-large;
   color: #ffffff;
 }
 body #milieu #Hi div {
-  width: 350px;
+  width: 50%;
   height: 30px;
   background-color: #ffffff;
   border-radius: 7px;
@@ -115,11 +143,17 @@ body #milieu #Hi div {
   gap: 10px;
   margin-right: 10%;
 }
+@media screen and (max-width: 530px) {
+  body #milieu #Hi div {
+    margin-right: 0;
+  }
+}
 body #milieu #Hi div img {
   width: 25px;
   margin-left: 15px;
 }
 body #milieu #Hi div input {
+  width: 70%;
   border: none;
   font-size: large;
   color: black;
@@ -129,6 +163,14 @@ body #milieu #totalBalance {
   width: 100%;
   display: flex;
   font-family: "Poppins Medium";
+}
+@media screen and (max-width: 530px) {
+  body #milieu #totalBalance {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 body #milieu #totalBalance #chiffreBalance {
   height: 100%;
@@ -165,25 +207,27 @@ body #milieu #totalBalance #ulBalance {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 530px) {
+  body #milieu #totalBalance #ulBalance {
+    width: 80%;
+  }
+}
 body #milieu #totalBalance #ulBalance div {
-  width: 320px;
+  width: 80%;
   height: 45px;
   background-color: #292727;
   border-radius: 12px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body #milieu #totalBalance #ulBalance div ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
+  justify-content: space-around;
   color: #ffffff;
   align-items: center;
-  font-size: medium;
-  font-weight: lighter;
 }
-body #milieu #totalBalance #ulBalance div ul #active {
+@media screen and (max-width: 530px) {
+  body #milieu #totalBalance #ulBalance div {
+    width: 100%;
+  }
+}
+body #milieu #totalBalance #ulBalance div #active {
   background-color: #0D0C0C;
   width: 80px;
   height: 30px;
@@ -212,6 +256,13 @@ body #milieu #recentTransactions {
   justify-content: space-around;
   font-family: "Poppins Medium";
 }
+@media screen and (max-width: 530px) {
+  body #milieu #recentTransactions {
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+  }
+}
 body #milieu #recentTransactions .Transactions {
   display: flex;
   justify-content: space-evenly;
@@ -219,6 +270,18 @@ body #milieu #recentTransactions .Transactions {
   color: #ffffff;
   font-size: small;
   opacity: 100%;
+}
+@media screen and (max-width: 530px) {
+  body #milieu #recentTransactions .Transactions {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 530px) {
+  body #milieu #recentTransactions .Transactions div {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
 }
 body #milieu #recentTransactions .Transactions img {
   width: 80%;
@@ -260,21 +323,44 @@ body #milieu #recentTransactions #mid {
   height: 30%;
   width: 100%;
   background-color: rgba(32, 35, 43, 0.6980392157);
-  opacity: 70%;
   border-radius: 20px;
   display: flex;
+}
+@media screen and (max-width: 530px) {
+  body #milieu #recentTransactions #mid {
+    height: 250px;
+  }
 }
 body #milieu #recentTransactions #bas {
   height: 30%;
   width: 100%;
   background-color: rgba(32, 35, 43, 0.6980392157);
-  opacity: 70%;
   border-radius: 20px;
   display: flex;
+}
+@media screen and (max-width: 530px) {
+  body #milieu #recentTransactions #bas {
+    height: 250px;
+  }
 }
 body #droite {
   width: 30%;
   height: 130vh;
+}
+@media screen and (max-width: 1024px) {
+  body #droite {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body #droite {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 530px) {
+  body #droite {
+    margin-top: 250px;
+  }
 }
 body #droite #notifs {
   width: 100%;
@@ -282,6 +368,11 @@ body #droite #notifs {
   display: flex;
   justify-content: space-between;
   align-items: end;
+}
+@media screen and (max-width: 768px) {
+  body #droite #notifs {
+    display: none;
+  }
 }
 body #droite #notifs img {
   margin: 10px;
@@ -294,6 +385,11 @@ body #droite #transactionsDroite {
   width: 100%;
   height: 50%;
   font-family: "Poppins Medium";
+}
+@media screen and (max-width: 768px) {
+  body #droite #transactionsDroite {
+    margin-bottom: 120px;
+  }
 }
 body #droite #transactionsDroite p {
   height: 30%;
@@ -311,6 +407,11 @@ body #droite #transactionsDroite .transacsDroites {
   align-items: center;
   justify-content: start;
   gap: 5%;
+}
+@media screen and (max-width: 768px) {
+  body #droite #transactionsDroite .transacsDroites {
+    margin-top: 20px;
+  }
 }
 body #droite #transactionsDroite .transacsDroites div:nth-of-type(1) {
   width: 20%;
@@ -335,6 +436,7 @@ body #droite #transactionsDroite .transacsDroites div:nth-of-type(3) {
 }
 body #droite #transactionsDroite .transacsDroites .o70 {
   opacity: 70%;
+  font-size: 12px;
 }
 body #droite #assets {
   width: 100%;
@@ -380,6 +482,11 @@ body #droite #assets #Bitcoin #degradeBitcoin div:nth-of-type(1) {
 body #droite #assets #Bitcoin #degradeBitcoin div:nth-of-type(1) img {
   width: 15%;
 }
+@media screen and (max-width: 768px) {
+  body #droite #assets #Bitcoin #degradeBitcoin div:nth-of-type(1) img {
+    width: 10%;
+  }
+}
 body #droite #assets #Bitcoin #degradeBitcoin div:nth-of-type(2) {
   width: 80%;
   height: 25%;
@@ -393,7 +500,7 @@ body #droite #assets #Bitcoin #degradeBitcoin div:nth-of-type(3) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: x-large;
+  font-size: larger;
 }
 body #droite #assets #Etherum {
   width: 100%;
@@ -423,6 +530,11 @@ body #droite #assets #Etherum #degradeEtherum div:nth-of-type(1) {
 body #droite #assets #Etherum #degradeEtherum div:nth-of-type(1) img {
   width: 15%;
 }
+@media screen and (max-width: 768px) {
+  body #droite #assets #Etherum #degradeEtherum div:nth-of-type(1) img {
+    width: 10%;
+  }
+}
 body #droite #assets #Etherum #degradeEtherum div:nth-of-type(2) {
   width: 80%;
   height: 25%;
@@ -436,7 +548,7 @@ body #droite #assets #Etherum #degradeEtherum div:nth-of-type(3) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: x-large;
+  font-size: larger;
 }
 
 /*# sourceMappingURL=build.css.map */
