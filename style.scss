@@ -4,13 +4,21 @@
   box-sizing: border-box;
 }
 
+.vert{
+  color: #4AD619 !important;
+}
+
+.rouge{
+  color: #D61919 !important;
+}
+
 body{
   background-color: #000;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   #gauche{
     width: 20%;
-    height: 100%;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +45,7 @@ body{
         justify-content: center;
         height: 65px;
         width: 250px;
-        background-color: lightgray;
+        background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
         border-radius: 17px;
         gap: 15px;
         margin-left: 10%;
@@ -81,7 +89,7 @@ body{
   }
   #milieu{
     width: 50%;
-    height: 100%;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     #Hi{
@@ -223,17 +231,11 @@ body{
           width: 70px;
           border-radius: 20px;
         }
-        #vert{
-          color: #4AD619;
-        }
         #bleu{
           color: #1970D6;
         }
         #violet{
           color: #6C1182;
-        }
-        #rouge{
-          color: #D61919;
         }
       }
       #haut{
@@ -273,7 +275,7 @@ body{
   }
   #droite{
     width: 30%;
-    height: 100%;
+    height: 130vh;
     #notifs{
       width: 100%;
       height: 10%;
@@ -293,19 +295,148 @@ body{
       height: 50%;
       font-family: "Poppins Medium";
       p{
-        height: 10%;
+        height: 30%;
         color: #ffffff;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 3%;
+        font-weight: bold;
       }
       .transacsDroites{
-        height: 18%;
+        height: 14%;
         width: 100%;
-        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 5%;
+        div:nth-of-type(1){
+          width: 20%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .M10{
+            margin-left: 10px;
+          }
+          .T50{
+            width: 50%;
+          }
+          .T70{
+            width: 60%;
+          }
+        }
+        div:nth-of-type(2){
+          width: 40%;
+        }
+        div:nth-of-type(3){
+          width: 40%;
+        }
+        .o70{
+        opacity: 70%;
+      }
       }
     }
     #assets{
       width: 100%;
       height: 40%;
-      background-color: lightskyblue;
+      #assetTexte{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        font-family: "Poppins Medium";
+        p{
+          font-weight: bold;
+          color: #ffffff;
+          margin-left: 3%;
+        }
+      }
+      #Bitcoin{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #degradeBitcoin{
+          height: 90%;
+          width: 80%;
+          background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+          border-radius: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: #ffffff;
+          font-family: "Poppins Medium";
+          div:nth-of-type(1){
+            width: 80%;
+            height: 50%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            img{
+              width: 15%;
+            }
+          }
+          div:nth-of-type(2){
+            width: 80%;
+            height: 25%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+          }
+          div:nth-of-type(3){
+            width: 80%;
+            height: 25%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: x-large;
+          }
+        }
+      }
+      #Etherum{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #degradeEtherum{
+          height: 90%;
+          width: 80%;
+          background: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
+          border-radius: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: #ffffff;
+          font-family: "Poppins Medium";
+          div:nth-of-type(1){
+            width: 80%;
+            height: 50%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            img{
+              width: 15%;
+            }
+          }
+          div:nth-of-type(2){
+            width: 80%;
+            height: 25%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+          }
+          div:nth-of-type(3){
+            width: 80%;
+            height: 25%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: x-large;
+          }
+        }
+      }
     }
   }
 
