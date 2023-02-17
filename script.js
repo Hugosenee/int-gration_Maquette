@@ -42,3 +42,24 @@ options: {
 });
 
 
+let menu = document.getElementById('burger')
+let gauche = document.getElementById('gauche')
+let milieu = document.getElementById('milieu')
+let droite = document.getElementById('droite')
+let close = document.getElementById('close')
+
+menu.addEventListener('click', function () {
+    gauche.classList.toggle('activeburger')
+    milieu.classList.toggle('none')
+    droite.classList.toggle('none')
+    close.classList.toggle('active')
+
+})
+
+close.addEventListener('click', function () {
+    gauche.classList.toggle('activeburger')
+    milieu.classList.toggle('none')
+    droite.classList.toggle('none')
+    close.classList.toggle('active')
+})
+

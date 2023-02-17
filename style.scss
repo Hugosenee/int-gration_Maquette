@@ -12,6 +12,8 @@
   color: #D61919 !important;
 }
 
+
+
 body{
   background-color: #000;
   height: 130vh;
@@ -19,6 +21,21 @@ body{
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+  }
+  .activeburger{
+    position: absolute;
+    display: block !important;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: black;
+  }
+  .active{
+    display: block!important;
+  }
+  .none{
+    display: none !important;
   }
   #gauche{
     width: 20%;
@@ -42,6 +59,12 @@ body{
         font-weight: bold;
         font-size: xx-large;
         margin-top: 10px;
+      }
+      p{
+        color: #ffffff;
+        font-size: xxx-large;
+        margin-left: 30%;
+        display: none;
       }
     }
     #dashboardSection{
