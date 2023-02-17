@@ -129,6 +129,21 @@ body #milieu #Hi {
     margin-bottom: 20px;
   }
 }
+body #milieu #Hi #burger {
+  display: none;
+  width: 35px;
+  height: 35px;
+}
+@media screen and (max-width: 1024px) {
+  body #milieu #Hi #burger {
+    display: flex;
+  }
+}
+@media screen and (max-width: 530px) {
+  body #milieu #Hi #burger {
+    margin-right: 90%;
+  }
+}
 body #milieu #Hi p {
   font-size: x-large;
   color: #ffffff;

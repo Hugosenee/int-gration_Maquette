@@ -123,6 +123,19 @@ body{
         margin-bottom: 20px;
       }
 
+
+      #burger {
+        display: none;
+        width: 35px;
+        height: 35px;
+        @media screen and (max-width: 1024px) {
+          display: flex;
+        }
+        @media screen and (max-width: 530px) {
+          margin-right: 90%;
+        }
+      }
+
       p{
         font-size: x-large;
         color: #ffffff;
